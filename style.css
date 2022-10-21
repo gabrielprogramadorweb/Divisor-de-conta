@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+body {
+    background-color: #60a9eb;
+    background: -webkit-linear-gradient(to left, #0f9dc7, #0df1f1);
+    background: linear-gradient(to left, #0f9dc7, #0df1f1);
+    font-family: 'Sora', sans-serif;
+    background-image: url(bg-1.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no;
+
+    }
+
+#container {
+    display: flex;
+    text-align: center;
+    height: auto;
+    width: 80%;
+    margin: 3% auto;
+    padding: 0 0  0;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+
+#calculator{
+    padding-top: 10px;
+    margin-left: 70px;
+    left: 50%;
+    padding-bottom: 20px;
+}
+#topo{
+    background: -webkit-linear-gradient(#60a9eb, #ba227e);
+    border-radius: 20px;
+    padding:0px;
+    height: auto;
+    text-align: center;
+    
+}
+
+h1 {
+    color: white;
+    padding: 10px 25px 0;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 4px black;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    }
+
+img{
+    width: 200px;
+    height: 15%;
+    display: block;
+    margin: 0 auto;
+    }
+
+#nomes{
+    margin-left: 0px;
+    width: 80%;
+    height: 30px;
+    font-size: 1em;
+    }
+      
+
+
+form input[type="text"] {
+    width:90px;
+    text-align: center;
+}
+
+input {
+    padding-left: 0px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50);
+}
+
+#total-conta {
+    font-size: 14px;
+    color: rgb(98, 0, 255);
+    background-color: #f7f7f7;
+    width: 80%;
+    height: 30px;
+        font-size: 1em;
+  
+}
+
+#total-conta:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+#taxa-servico {
+    text-align: center;
+    width: 82%;
+    border-radius: 50px;
+    height: 40px;
+    font-size: 1em;
+      
+}
+
+#numero-pessoas {
+    width: 80%;
+    height: 30px;
+    font-size: 1em;
+    color: rgb(98, 0, 255);
+    background-color: #f7f7f7;
+
+}
+
+
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: #0ab7e2;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: -webkit-linear-gradient(#60a9eb, #ba227e);
+    border-bottom-color: #111;
+  }
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+#valor-calculado {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#valor-calculado:before {
+    content: "Valor por pessoa:";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#valor-calculado sup {
+    font-size: 20px;
+    top: -18px;
+  }
+
+#valor-calculado small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+@media(max-width:900px) {
+
+body{
+
+    background-image: url(bg.jpg);
+    }
+    #container {
+    display: block;
+    }
+    #calculator{
+    margin-left: 0;
+
+  }
+}
